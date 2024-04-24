@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Native Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="fontawesome-free-6.5.2-web/css/fontawesome.css"
+    />
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/brands.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/solid.css" />
+    <script src="js/bootstrap.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+  </head>
+  <body>
+    <!-- include in design (4): ex 9-flash card, ex 8-insta story redesign, ex 6-todo, ex 5-exercise -->
+    <!-- include in development (4): lab 10-quiz, lab 9-exercise (add lab 6-react only app?), ex 7-todo (add lab 8-registration?), lab 4-menu -->
+    <header id="my-nav">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid teal">
+          <a class="navbar-brand">Riley Brunn</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav" data-bs-theme="dark">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#Dev">Development</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Des">Design</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="links/copy-of-current_resume_2024.pdf"
+                  target="_blank"
+                  >CV</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#C">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <h1 id="title-margins" class="left-margin">Ux/UI Design</h1>
+    <p id="my-bio" class="left-margin">
+      While I currently reside in Orlando, I was born and raised on the east
+      coast of Florida. Growing up, I had a dual fascination with both the arts
+      and various scientific disciplines. Cultivating a diverse range of
+      knowledge, I've studied technology, biological sciences, business, and the
+      fine arts throughout my academic career. I have a passion for both the
+      design and technical aspects of web and mobile apps, with a focus on
+      creating fun and interesting visuals. I'm excited to share these passions
+      with others in my future work and career.
+    </p>
+
+    <p id="interact" class="left-margin"><b class="blue">To Interact:</b> this portfolio includes GIFs of my development projects in action, as well as links that take you to PDF files of the design projects. Feel free to visit any links within these PDFs as well.</p>
+
+    <hr class="hr-fix" />
+
+    <h2 id="Dev" class="tb-margins left-margin">Development</h2>
+    <section class="left-margin dev-des">
+      <div id="bigger-spc" class="col">
+        <h4>Quiz App</h4>
+        <!-- used react native, js, expo -->
+        <div class="i-div">
+          <span class="i-span blue"><i class="fa-brands fa-react fa-2xl"></i></span
+          ><span class="i-span blue"><i class="fa-brands fa-js fa-2xl"></i></span>
+        </div>
+        <p>
+          In this app, users are presented with a series of three questions.
+          After they have been answered, the score and summary of choices are
+          presented for review on the final screen.
+        </p>
+        <img
+          src="img/lab10-quiz-app-ezgif.com-speed.gif"
+          alt="GIF of a multi-screen quiz with 3 questions and a summary screen"
+          class="float-gif"
+        />
+        <h6 class="blue">Key Features</h6>
+        <ul>
+          <li>
+            Question types include multiple-choice, multiple-answer, and
+            true/false
+          </li>
+          <li>Score is calculated and displayed</li>
+          <li>
+            Summary of questions on final screen: choices are checked and
+            highlighted green if correct; if not, the are grayed out and styled
+            with a strikethrough; correct answers that aren't chosen are simply
+            checked
+          </li>
+        </ul>
+        <h6 class="blue">Skills Highlighted</h6>
+        <ul>
+          <li>Expo is used for cross-platform tests</li>
+          <li>Employs React Native for UI components</li>
+          <li>
+            Styles are utilized to better show whether the chosen answers were
+            correct or incorrect
+          </li>
+        </ul>
+        <p>
+          One problem I had while making this was that one of the questions had
+          an answer already selected by default, which wasn't what I was
+          intending. To fix this, I used "null" instead of "0" as that
+          question's "useState()" value.
+        </p>
+        <p>
+          Creating this app gave me an understanding of how to incorporate
+          various JavaScript logics and conditionals into React Native.
+        </p>
+      </div>
+
+      <div class="col tb-margins">
+        <h4>Exercise App</h4>
+        <!-- used react native, js, expo -->
+        <div class="i-div">
+          <span class="i-span blue"><i class="fa-brands fa-react fa-2xl"></i></span
+          ><span class="i-span blue"><i class="fa-brands fa-js fa-2xl"></i></span>
+        </div>
+        <p>
+          This exercise app allows users to choose from a list of exercises and
+          track how much activity they've done through a rep counter or
+          stopwatch.
+        </p>
+        <img
+          src="img/lab9-exercise-app-ezgif.com-speed.gif"
+          alt="GIF of a simple exercise app that includes a list of exercises to choose from and different screens for each one. Screens include timers, repetition counters, and suggested exercise buttons"
+          class="float-gif"
+        />
+        <h6 class="blue">Key Features</h6>
+        <ul>
+          <li>Repetition-based exercises include a rep counter</li>
+          <li>Duration-based exercises include a timer</li>
+          <li>Reset buttons for rep count/timer</li>
+          <li>
+            A related exercise is suggested to the user, giving them the option
+            to navigate to that exercise's screen from the previous exercise
+          </li>
+        </ul>
+        <h6 class="blue">Skills Highlighted</h6>
+        <ul>
+          <li>Expo is used for cross-platform tests</li>
+          <li>Employs React Native for UI components</li>
+          <li>JavaScript is used for stopwatch logic</li>
+          <li>Styles are utilized to create an attractive design and layout</li>
+        </ul>
+        <p>
+          While making this, I couldn't correctly implement the Suggested
+          Exercise buttons. To make them work, I passed in the names of the
+          suggested exercises as route params in the DurationExercise and
+          RepetitonExercise functions and then used them in their respective
+          navigation.navigate methods.
+        </p>
+        <p>
+          Developing this app gave me a better understanding of React Native and
+          cross-platform testing.
+        </p>
+      </div>
+
+      <div class="col tb-margins">
+        <h4>To-Do App</h4>
+        <!-- used react native, expo -->
+        <div class="i-div">
+          <span class="i-span blue"><i class="fa-brands fa-react fa-2xl"></i></span>
+        </div>
+        <p>
+          In this simple to-do app, users can create tasks and check them off
+          once completed.
+        </p>
+        <img
+          src="img/ex7-todo-app-ezgif.com-speed.gif"
+          alt="GIF of a task being added to a list and checked off"
+          id="fix-padding"
+          class="float-gif"
+        />
+        <h6 class="blue">Key Features</h6>
+        <ul>
+          <li>Users are able to add tasks to a compiled list</li>
+          <li>Tasks can be checked off or unchecked</li>
+          <li>Checked off tasks are styled with a strikethrough</li>
+        </ul>
+        <h6 class="blue">Skills Highlighted</h6>
+        <ul>
+          <li>Expo is used for cross-platform tests</li>
+          <li>Employs React Native for UI components</li>
+          <li>Styles are utilized for better understanding of task status</li>
+        </ul>
+        <p>
+          During the creation process, I noticed that checking or unchecking a
+          box would cause the whole list to disappear. I figured out that it was
+          because I didn't add a rest parameter into the setTasks method in the
+          update Task function.
+        </p>
+        <p>
+          This project was a foundational learning experience that helped me
+          learn React Native. With it, I was able to craft a functional and
+          simple app with real-world relevance and application.
+        </p>
+      </div>
+
+      <div class="col tb-margins">
+        <h4>Menu App</h4>
+        <!-- used react -->
+        <div class="i-div">
+          <span class="i-span blue"><i class="fa-brands fa-react fa-2xl"></i></span>
+        </div>
+        <p>
+          This online menu displays food items categorized into Dinner and
+          Dessert sections.
+        </p>
+        <img
+          src="img/lab4-menu-app-ezgif.com-video-to-gif-converter.gif"
+          alt="GIF of a simple online menu"
+          class="float-gif"
+        />
+        <h6 class="blue">Key Features</h6>
+        <ul>
+          <li>
+            No hardcoded values, so items are able to be replaced with ease
+          </li>
+          <li>All items include "Add to Cart" buttons</li>
+        </ul>
+        <h6 class="blue">Skills Highlighted</h6>
+        <ul>
+          <li>React is utilized for UI components</li>
+          <li>Styles are utilized to gie a menu a more interesting look</li>
+        </ul>
+        <p>
+          Since I was very new to React when working on this, I missed putting
+          in many important curly braces. These are there so that values don't
+          have to be hardcoded and you can pass in JavaScript variables and
+          objects containing whatever values you want.
+        </p>
+        <p>
+          This was a foundational activity crucial to my understanding of the
+          React library. It also helped me learn how to code an online menu with
+          options available for ordering items from it.
+        </p>
+      </div>
+    </section>
+
+    <hr class="hr-fix" />
+
+    <h2 id="Des" class="tb-margins left-margin">Design</h2>
+    <div class="container text-center">
+      <div class="row row-cols-1 row-cols-md-2 gx-5 gy-5 w-75 mx-auto">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="img/flashcard-app.png"
+              class="card-img-top"
+              alt="visual mockup of mobile flash card app showing 6 screens"
+              height="400px"
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="color: #05668D">Flash Card App</h5>
+              <p class="card-text">
+                FlashDeck would be beneficial to people who need to study and
+                like to stay organized. The app would allow users to create
+                decks of flashcards and flip through the cards to study them.
+                Features would include:
+              </p>
+              <ul>
+                <li>creating, editing, and deleting cards and decks</li>
+                <li>studying the cards in sequence or shuffling them</li>
+                <li>color coding and titling decks</li>
+                <li>
+                  editable front and back of cards to separate prompt/question
+                  from answer
+                </li>
+              </ul>
+              <p class="card-text">The color scheme gives the app a lighter and less daunting look, which is done to ease the user's possible stress surrounding studying. Orange is used as an accent color because it tends to represent confidence and optimism, both feelings that this app hopes to invoke.</p>
+              <p class="card-text">Button shapes closely resemble ones used in other apps for familiarity's sake. Shuffling the cards makes the answers harder to predict. Color coding the decks helps users distinguish them better and gives the app a more fun feel.</p>
+              <a
+                href="links/flashcard-app-design.pdf"
+                class="btn btn-primary"
+                target="_blank"
+                style="background-color: #427AA1; border: #05668D;"
+                >View PDF</a
+              >
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="img/MixCollage-22-Apr-2024-11-10-AM-1476.jpg"
+              class="card-img-top"
+              alt="side-by-side of an Instagram Story and a redesign of the same screen"
+              height="400px"
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="color: #05668D">Instagram Story Redesign</h5>
+              <p class="card-text">
+                This redesign still has all of the features of the old design but gives the top of the screen more room to show the media and groups all of the extra features at the bottom. The Send Message box is intended for sending a message to the creator, so I put it side-by-side with the creator's profile picture and name so its use is more obvious. The send button, which is intended for sending the story to someone else, has been put at the bottom with the other buttons.
+              </p>
+              <a href="links/insta-story-redesign.pdf" class="btn btn-primary" target="_blank" style="background-color: #427AA1; border: #05668D;">View PDF</a>
+            
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="img/to-do-app.png"
+              class="card-img-top"
+              alt="visual mockup of mobile to-do app showing 5 screens"
+              height="400px"
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="color: #05668D">To-Do App</h5>
+              <p class="card-text">
+                This app utilizes a lively interface for completing an often boring or stressful task. To keep better track of their tasks, users can make an account for use across devices. <br> Demostrated features in visual:
+              </p>
+                <ul>
+                  <li>User icon reveals Log Out button</li>
+                  <li>"Filter..." buttons reveals three filtering options</li>
+                  <li>Meatballs menu buttons reveals Edit and Delete options</li>
+                </ul>
+                <p class="card-text">Light green is chosen as the background color to help the user feel calm and reassured in their task-setting activities. Teal goes niely as an accent color and a gradient is used to give the design a more interesting look.</p>
+                <p class="card-text">The layout resembles a traditional task list that would be put on paper while also including features for ease of use, such as a calendar to set due dates and the ability to filter and edit previously set tasks.</p>
+              <a href="links/to-do-app-design.pdf" class="btn btn-primary" target="_blank" style="background-color: #427AA1; border: #05668D;">View PDF</a>
+            
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="img/Exercise-App.png"
+              class="card-img-top"
+              alt="visual mockup of mobile exercise app showing 8 screens"
+              height="400px"
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="color: #05668D">Exercise App</h5>
+              <p class="card-text">
+                This design of an exercise app holds all the benefits of a tradition workout interface while including other features such as a fun design, options to add weight to certain exercises, and a way for the timer to count up or down depending on the user's needs. <br> Demostrated features in visual:
+              </p>
+                <ul>
+                  <li>Second plank screen shows option for timer to count up or down from specified point when kebab menu button is pressed</li>
+                  <li>Third plank screen shows time select when Timer box is pressed</li>
+                  <li>Second push-ups screen shows recording in progress</li>
+                  <li>Third push-ups screen shows selection box to add weight</li>
+                </ul>
+                <p class="card-text">Orange is used because it represents energy and excitement, demonstrating the app's intended atmosphere.</p>
+              <a href="links/exercise-app-design.pdf" class="btn btn-primary" target="_blank" style="background-color: #427AA1; border: #05668D;">View PDF</a>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="my-footer">
+      <h6 id="C" class="left-margin">Contact</h6>
+      <div class="left-margin i-div">
+      <a href="mailto:brunn.riley323@gmail.com" target="_blank" class="i-span black"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+      <a href="https://www.linkedin.com/in/riley-brunn/" target="_blank" class="i-span black"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+      <a href="https://github.com/digmed-13" target="_blank" class="i-span black"><i class="fa-brands fa-square-github fa-2xl"></i></a>
+    </div>
+    <div id="#last" class="left-margin black"><a id="handshake" href="https://app.joinhandshake.com/stu/users/45659845" target="_blank">Handshake</a></div>
+    <p id="boot" class="left-margin blue">Built with Bootstrap</p>
+    </footer>
+  </body>
+</html>
