@@ -1,11 +1,17 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "homepage": "https://rileybrunn.github.io/final-project-portfolio",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  }
 }
