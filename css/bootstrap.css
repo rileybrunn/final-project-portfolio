@@ -36,7 +36,11 @@ h1 {
 }
 
 #bigger-spc {
-  margin-top: 40px;
+  margin-top: 50px;
+}
+
+.spc-out {
+  margin-top: 125px;
 }
 
 .tb-margins {
