@@ -50,6 +50,10 @@ h1 {
   margin: auto;
 }
 
+.subheading {
+  text-align: left;
+}
+
 #my-bio {
   width: 60%;
   margin: auto;
@@ -61,13 +65,14 @@ h1 {
 }
 
 .float-gif {
-  float: right;
+  /* float: right; */
   border: solid #000 1px;
   height: 225px;
   margin-top: 30px;
-  margin-left: 40px;
-  margin-right: -15px;
+  /* margin-left: 40px;
+  margin-right: -15px; */
   margin-bottom: 30px;
+  margin: auto;
   width: 500px;
 }
 
