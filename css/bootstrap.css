@@ -7,8 +7,15 @@
 :root,
 
 @media screen and (min-width:320px) and (max-width:640px) {
+  #my-nav {
+    margin: auto;
+  }
   .left-margin {
     margin: auto ;
+  }
+  .float-gif {
+    float: none;
+    margin: auto;
   }
   .row {
     margin: auto;
@@ -38,7 +45,9 @@ h1 {
 }
 
 .left-margin{
-  margin-left:300px;
+  /* margin-left:300px; */
+  text-align: center;
+  margin: auto;
 }
 
 #my-bio {
