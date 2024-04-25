@@ -73,6 +73,7 @@ h1 {
   margin-right: -15px; */
   align-content: center;
   margin: 20px auto;
+  max-width: 100%;
 }
 
 #fix-padding {
