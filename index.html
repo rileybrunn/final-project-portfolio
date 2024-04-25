@@ -83,16 +83,16 @@
           <span class="i-span blue"><i class="fa-brands fa-react fa-2xl"></i></span
             ><span class="i-span blue"><i class="fa-brands fa-js fa-2xl"></i></span>
           </div>
+          <p>
+            In this app, users are presented with a series of three questions.
+            After they have been answered, the score and summary of choices are
+            presented for review on the final screen.
+          </p>
           <img
             src="img/lab10-quiz-app-ezgif.com-speed.gif"
             alt="GIF of a multi-screen quiz with 3 questions and a summary screen"
             class="float-gif"
           />
-        <p>
-          In this app, users are presented with a series of three questions.
-          After they have been answered, the score and summary of choices are
-          presented for review on the final screen.
-        </p>
         <h6 class="blue subheading">Key Features</h6>
         <ul>
           <li>
@@ -107,7 +107,7 @@
             checked
           </li>
         </ul>
-        <h6 class="blue">Skills Highlighted</h6>
+        <h6 class="blue subheading">Skills Highlighted</h6>
         <ul>
           <li>Expo is used for cross-platform tests</li>
           <li>Employs React Native for UI components</li>
@@ -116,13 +116,13 @@
             correct or incorrect
           </li>
         </ul>
-        <p>
+        <p class="subheading">
           One problem I had while making this was that one of the questions had
           an answer already selected by default, which wasn't what I was
           intending. To fix this, I used "null" instead of "0" as that
           question's "useState()" value.
         </p>
-        <p>
+        <p class="subheading">
           Creating this app gave me an understanding of how to incorporate
           various JavaScript logics and conditionals into React Native.
         </p>
@@ -145,7 +145,7 @@
           alt="GIF of a simple exercise app that includes a list of exercises to choose from and different screens for each one. Screens include timers, repetition counters, and suggested exercise buttons"
           class="float-gif"
         />
-        <h6 class="blue">Key Features</h6>
+        <h6 class="blue subheading">Key Features</h6>
         <ul>
           <li>Repetition-based exercises include a rep counter</li>
           <li>Duration-based exercises include a timer</li>
@@ -155,21 +155,21 @@
             to navigate to that exercise's screen from the previous exercise
           </li>
         </ul>
-        <h6 class="blue">Skills Highlighted</h6>
+        <h6 class="blue subheading">Skills Highlighted</h6>
         <ul>
           <li>Expo is used for cross-platform tests</li>
           <li>Employs React Native for UI components</li>
           <li>JavaScript is used for stopwatch logic</li>
           <li>Styles are utilized to create an attractive design and layout</li>
         </ul>
-        <p>
+        <p class="subheading">
           While making this, I couldn't correctly implement the Suggested
           Exercise buttons. To make them work, I passed in the names of the
           suggested exercises as route params in the DurationExercise and
           RepetitonExercise functions and then used them in their respective
           navigation.navigate methods.
         </p>
-        <p>
+        <p class="subheading">
           Developing this app gave me a better understanding of React Native and
           cross-platform testing.
         </p>
@@ -191,25 +191,25 @@
           id="fix-padding"
           class="float-gif"
         />
-        <h6 class="blue">Key Features</h6>
+        <h6 class="blue subheading">Key Features</h6>
         <ul>
           <li>Users are able to add tasks to a compiled list</li>
           <li>Tasks can be checked off or unchecked</li>
           <li>Checked off tasks are styled with a strikethrough</li>
         </ul>
-        <h6 class="blue">Skills Highlighted</h6>
+        <h6 class="blue subheading">Skills Highlighted</h6>
         <ul>
           <li>Expo is used for cross-platform tests</li>
           <li>Employs React Native for UI components</li>
           <li>Styles are utilized for better understanding of task status</li>
         </ul>
-        <p>
+        <p class="subheading">
           During the creation process, I noticed that checking or unchecking a
           box would cause the whole list to disappear. I figured out that it was
           because I didn't add a rest parameter into the setTasks method in the
           update Task function.
         </p>
-        <p>
+        <p class="subheading">
           This project was a foundational learning experience that helped me
           learn React Native. With it, I was able to craft a functional and
           simple app with real-world relevance and application.
@@ -231,25 +231,25 @@
           alt="GIF of a simple online menu"
           class="float-gif"
         />
-        <h6 class="blue">Key Features</h6>
+        <h6 class="blue subheading">Key Features</h6>
         <ul>
           <li>
             No hardcoded values, so items are able to be replaced with ease
           </li>
           <li>All items include "Add to Cart" buttons</li>
         </ul>
-        <h6 class="blue">Skills Highlighted</h6>
+        <h6 class="blue subheading">Skills Highlighted</h6>
         <ul>
           <li>React is utilized for UI components</li>
           <li>Styles are utilized to gie a menu a more interesting look</li>
         </ul>
-        <p>
+        <p class="subheading">
           Since I was very new to React when working on this, I missed putting
           in many important curly braces. These are there so that values don't
           have to be hardcoded and you can pass in JavaScript variables and
           objects containing whatever values you want.
         </p>
-        <p>
+        <p class="subheading">
           This was a foundational activity crucial to my understanding of the
           React library. It also helped me learn how to code an online menu with
           options available for ordering items from it.
